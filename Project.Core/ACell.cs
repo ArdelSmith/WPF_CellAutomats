@@ -4,29 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core
+namespace Project.Core
 {
-    public enum CellStatus
-    {
-        Alive,
-        Dead
-    }
-    public enum Type
-    {
-        Classic_Cell
-    }
-    internal interface ICellable
-    {
-        Type GetCellType();
-        void SetCellType(Type type);
-        CellStatus GetCellStatus();
-        void SetCellStatus(CellStatus cellStatus = CellStatus.Dead); 
-        int GetCellsNearby();
-        void SetCellsNearby(int amount);
-
-
-    }
-    public abstract class ACell: ICellable
+    public abstract class ACell : ICellable
     {
         private Type type;
         private CellStatus status;
@@ -43,7 +23,8 @@ namespace Core
         {
             return this.CellsNearby;
         }
-        public virtual void SetCellsNearby(int amount) {
+        public virtual void SetCellsNearby(int amount)
+        {
             if (amount > 0 && amount <= 8) this.CellsNearby = amount;
             else this.CellsNearby = 0;
         }
@@ -54,14 +35,6 @@ namespace Core
         public virtual void SetCellStatus(CellStatus status = CellStatus.Dead)
         {
             this.status = status;
-        }
-    }
-    public class ClassicCell: ACell
-    {
-        Type type = Type.Classic_Cell;
-        public ClassicCell()
-        {
-            this.SetCellStatus();
         }
     }
 }
