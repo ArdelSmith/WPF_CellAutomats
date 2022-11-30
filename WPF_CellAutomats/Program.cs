@@ -36,6 +36,7 @@ namespace Program
                     {
                         for (int l = j - 1; l < j + 2; l++)
                         {
+                            // если проверяемая нами клетка не исходная
                             if (!(k == i && l == j))
                             {
                                 try
