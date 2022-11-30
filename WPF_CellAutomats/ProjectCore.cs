@@ -44,7 +44,7 @@ namespace Core
             return this.CellsNearby;
         }
         public virtual void SetCellsNearby(int amount) {
-            if (amount > 0 & amount <= 8) this.CellsNearby = amount;
+            if (amount > 0 && amount <= 8) this.CellsNearby = amount;
             else this.CellsNearby = 0;
         }
         public virtual CellStatus GetCellStatus()
