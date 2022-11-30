@@ -20,7 +20,7 @@ namespace Core
         Type GetCellType();
         void SetCellType(Type type);
         CellStatus GetCellStatus();
-        void SetCellStatus(CellStatus cellStatus = CellStatus.Dead); 
+        void SetCellStatus(CellStatus cellStatus); 
         int GetCellsNearby();
         void SetCellsNearby(int amount);
 
@@ -44,14 +44,14 @@ namespace Core
             return this.CellsNearby;
         }
         public virtual void SetCellsNearby(int amount) {
-            if (amount > 0 && amount <= 8) this.CellsNearby = amount;
+            if (amount > 0 & amount <= 8) this.CellsNearby = amount;
             else this.CellsNearby = 0;
         }
         public virtual CellStatus GetCellStatus()
         {
             return this.status;
         }
-        public virtual void SetCellStatus(CellStatus status = CellStatus.Dead)
+        public virtual void SetCellStatus(CellStatus status)
         {
             this.status = status;
         }
@@ -61,7 +61,7 @@ namespace Core
         Type type = Type.Classic_Cell;
         public ClassicCell()
         {
-            this.SetCellStatus();
+            this.SetCellStatus(CellStatus.Dead);
         }
     }
 }

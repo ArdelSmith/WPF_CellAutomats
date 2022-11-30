@@ -36,7 +36,6 @@ namespace Program
                     {
                         for (int l = j - 1; l < j + 2; l++)
                         {
-                            // если проверяемая нами клетка не исходная
                             if (!(k == i && l == j))
                             {
                                 try
@@ -91,6 +90,21 @@ namespace Program
                         if (j == 9) Console.Write("\n");
                     }
                 }
+            }
+        }
+        public static void Main()
+        {
+            CreateStartLayer();
+            ShowLayer();
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            while (true)
+            {
+                CountNeighbours();
+                GenerateNewLayer();
+                ShowLayer();
+                System.Threading.Thread.Sleep(1000);
+                Console.Clear();
             }
         }
     }
