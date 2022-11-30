@@ -41,10 +41,10 @@ namespace Core
         }
         public virtual int GetCellsNearby()
         {
-            return CellsNearby;
+            return this.CellsNearby;
         }
         public virtual void SetCellsNearby(int amount) {
-            if (amount > 0 && amount <= 8) this.CellsNearby = amount;
+            if (amount > 0 & amount <= 8) this.CellsNearby = amount;
             else this.CellsNearby = 0;
         }
         public virtual CellStatus GetCellStatus()
@@ -59,5 +59,9 @@ namespace Core
     public class ClassicCell: ACell
     {
         Type type = Type.Classic_Cell;
+        public ClassicCell()
+        {
+            this.SetCellStatus(CellStatus.Dead);
+        }
     }
 }
