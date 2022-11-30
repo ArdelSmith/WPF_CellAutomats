@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace huyna
+
+namespace Project.Core
 {
     public class ClassicCell : ACell
     {

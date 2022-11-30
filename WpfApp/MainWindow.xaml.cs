@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace huyna
+namespace WpfApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

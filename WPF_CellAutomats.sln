@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameLifeConsole", "GameLife
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Core", "Project.Core\Project.Core.csproj", "{F0CFE9C1-880E-44DB-8F44-AAFCB95C31E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "huyna", "huyna\huyna.csproj", "{F6880001-10BC-40AB-9267-0413734455DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf_App", "huyna\Wpf_App.csproj", "{F6880001-10BC-40AB-9267-0413734455DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
